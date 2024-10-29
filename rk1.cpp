@@ -65,7 +65,7 @@ int main() {
         books[i] = new Book(arr[i].c_str(), arr1[i].c_str(), arr2[i], arr3[i]); // Cоздание объектов Book с изменением типов с string на const char*, посредством метода .c_str()     
         cout << endl;
     }
-// сортировка: books - book
+// сортировка: (указатель на первый объект, указатель на объект соазу за последним в массиве)
     sort(books, books + amount_of_books_in_library, compareBooks);
 // вывод по каждой из книг
     for (int i = 0; i < amount_of_books_in_library; i++) {
